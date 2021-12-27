@@ -1,0 +1,11 @@
+{% extends "referral/base.html" %} {% load static %}{% block title %} Referrals
+{% endblock%} {% block content%}
+<div class="container">
+  <h1>Referrals</h1>
+  <ul>
+    {% for referral in referrals %}
+    <li>{{ referral.participant }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %} {% block jsfiles %} {% endblock jsfiles %}
